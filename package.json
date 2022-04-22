@@ -1,0 +1,26 @@
+{
+  "name": "demo-maker",
+  "version": "0.0.1-alpha",
+  "description": "ui demo maker component",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "budo src/index.js:bundle.js --open --live",
+    "build": "browserify src/index.js -o bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ui",
+    "demo",
+    "component"
+  ],
+  "author": "ninabreznik",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "budo": "^11.7.0"
+  },
+  "dependencies": {
+    "message-maker": "github:datdotorg/message-maker",
+    "datdot-ui-input-number": "github:datdot-ui/input-number#v0.0.2-alpha"
+  }
+}
